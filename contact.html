@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!--Favicon-->
+    <link rel="icon" type="image/x-icon" href="imgItens/logo.png">
+
     <!--Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,7 +17,32 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 
-    <title>University Website Design</title>
+    <!--Title-->
+    <title>Gastronomia Através Das Telas</title>
+
+    <!--Open Graph Requirements-->
+        <!-- HTML Meta Tags -->
+        <title>Gastronomia Através Das Telas</title>
+        <meta name="description" content="Realize o sonho de comer as delícias dos filmes que você sempre quis!">
+
+        <!-- Facebook Meta Tags -->
+        <meta property="og:url" content="https://gastronomiaatravesdastelas.com/index.html/"><!--EDITA AQUI-->
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="A Gastronomia Através Das Telas">
+        <meta property="og:description" content="Realize o sonho de comer as delícias dos filmes que você sempre quis!">
+        <meta property="og:image" content="https://i.imgur.com/R5vYI47.png">
+
+        <!-- Twitter Meta Tags -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta property="twitter:domain" content="gastronomiaatravesdastelas.com"><!--EDITA AQUI-->
+        <meta property="twitter:url" content="https://gastronomiaatravesdastelas.com/index.html/"><!--EDITA AQUI-->
+        <meta name="twitter:title" content="A Gastronomia Através Das Telas">
+        <meta name="twitter:description" content="Realize o sonho de comer as delícias dos filmes que você sempre quis!">
+        <meta name="twitter:image" content="https://i.imgur.com/R5vYI47.png">
+    <!--Open Graph End-->
+
+    <!--Script-->
+    <script defer src="script.js"></script>
 </head>
 <body>
 
@@ -22,60 +50,75 @@
 
     <section class="sub-header">
         <nav>
-            <a href="index.html"><img src="eduford_img/logo.png" alt="Site Logo"></a>
+            <a href="index.html"><img src="imgItens/Logo.png" alt="Site Logo"></a>
             <div class="nav-links">
                 <i class="fa-solid fa-xmark"></i>
                 <ul>
                     <li><a href="index.html">HOME</a></li>
-                    <li><a href="about.html">ABOUT</a></li>
-                    <li><a href="course.html">COURSE</a></li>
-                    <li><a href="blog.html">BLOG</a></li>
-                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="about.html">SOBRE</a></li>
+                    <li><a href="ebook.html">E-BOOK</a></li>
+                    <li><a href="contact.html">CONTATO</a></li>
                 </ul>
             </div>
             <i class="fa-solid fa-bars"></i>
+            <div class="waves"></div>
         </nav>
-        <h1>Contact Us</h1>
+        <div class="sub-headerContainer">
+            <h1>Entre em<br />Contato</h1>
+            <p>Tem dúvidas? Perguntas? Sugestões?<br />Entre em contato conosco e resolva já!</p>
+        </div>
     </section>
 
     <!--------Contact Us-------->
 
-    <section class="location">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5260.064750830781!2d-47.822300339261766!3d-21.214891736417357!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b9b9312d6a64c1%3A0x6c79c5b6ea7d1884!2sUNIP%20-%20Ribeir%C3%A3o%20Preto!5e0!3m2!1spt-BR!2sbr!4v1667061864456!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </section>
-
     <section class="contact-us">
         <div class="row">
-            <div class="contact-col">
-                <div>
-                    <a href=""><i class="fa-solid fa-house-user"></i></a>
-                    <span>
-                        <h5>XYZ Road, ABC Building</h5>
-                        <p>Ribeirão Preto, São Paulo</p>
-                    </span>
-                </div>
-                <div>
-                    <a href=""><i class="fa-solid fa-phone"></i></a>
-                    <span>
-                        <h5>+55 16 99357-2303</h5>
-                        <p>Monday to Saturday, 10AM to 6PM</p>
-                    </span>
-                </div>
-                <div>
-                    <a href=""><i class="fa-solid fa-envelope"></i></a>
-                    <span>
-                        <h5>joaopbataglia@gmail.com</h5>
-                        <p>Email us your query</p>
-                    </span>
-                </div>
+            <div class="contact-col linktree">
+                <a href="https://www.instagram.com/gastronomia_atraves_das_telas/" target="_blank">
+                    <div>
+                        <i class="fa-brands fa-instagram"></i>
+                        <span>
+                            <h5>@gastronomia_atraves_das_telas</h5>
+                            <p>Link para o nosso Instagram</p>
+                        </span>
+                    </div>
+                </a>
+
+                <a href="https://wa.me/5516988762506?text=Me%20fale%20mais%20sobre%20o%20e-book%20do%20Gastronomia%20Através%20Das%20Telas" target="_blank">
+                    <div>
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <span>
+                            <h5>+55 16 98876-2506</h5>
+                            <p>Chama a gente pelo nosso Whatsapp</p>
+                        </span>
+                    </div>
+                </a>
+
+                <a href="mailto:gastronomiatravesdastelas@gmail.com" target="_blank">
+                    <div>
+                        <i class="fa-regular fa-envelope"></i>
+                        <span>
+                            <h5>gastronomiatravesdastelas@gmail.com</h5>
+                            <p>Entre em contato pelo nosso E-Mail</p>
+                        </span>
+                    </div>
+                </a>
             </div>
             <div class="contact-col">
                 <form action="form-handler.php" method="post">
-                    <input type="text" name="name" placeholder="Enter your name" required>
-                    <input type="email" name="email" placeholder="Enter your best E-Mail adress" required>
-                    <input type="text" name="subject" placeholder="Enter your subject" required>
-                    <textarea rows="8" name="message" placeholder="Enter your message"></textarea>
-                    <button type="submit" class="hero-btn red-btn">SEND MESSAGE</button>
+                    <div class="inputFoods">
+                        <input type="text" name="name" placeholder="Seu Nome" required>
+                    </div>
+
+                    <div class="inputFoods">
+                        <input type="email" name="email" placeholder="Seu Melhor Endereço de E-Mail ✉" required>
+                    </div>
+
+                    <div class="inputFoods">
+                        <input type="text" name="subject" placeholder="Qual o Assunto do Texto?" required>
+                    </div> 
+                    <textarea rows="8" name="message" placeholder="Sua Mensagem"></textarea>
+                    <button style="cursor: pointer;" type="submit" class="hero-btn red-btn">ENVIAR MENSAGEM</button>
                 </form>
             </div>
         </div>
@@ -85,16 +128,14 @@
 
     <section class="footer">
         <hr>
-        <h4>About Us</h4>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto, et. Nihil, atque pariatur eveniet impedit hic repudiandae accusantium natus<br>beatae iusto doloremque laudantium rem minima laboriosam, cumque aut nulla delectus?</p>
+        <h4>Nossas contas na Web</h4>
+        <p>Siga nossos perfis nas redes sociais para receber as atualizações de nossos produtos em primeira mão!<br>Ps: Qualquer um pode cozinhar ;)</p>
         <div class="icons">
-            <a href=""><i class="fa-brands fa-instagram"></i></a>
-            <a href=""><i class="fa-brands fa-twitter"></i></a>
-            <a href=""><i class="fa-brands fa-amazon"></i></a>
-            <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://www.instagram.com/gastronomia_atraves_das_telas/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="" target="_blank"><i class="fa-brands fa-amazon"></i></a>
+            <a href="https://wa.me/5516988762506?text=Me%20fale%20mais%20sobre%20o%20e-book%20do%20Gastronomia%20Através%20Das%20Telas" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
         </div>
     </section>
 
-    <script src="script.js"></script>
 </body>
 </html>
