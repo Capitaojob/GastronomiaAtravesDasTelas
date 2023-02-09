@@ -33,6 +33,11 @@ q = 121px - x% */
 
     --light-shadow: rgba(0,0,0,0.3);
     --strong-shadow: rgba(0,0,0,0.7);
+
+    --h1size: 2.2rem;
+    --h2size: 2rem;
+    --h3size: 1.3rem;
+    --psize: 1rem;
 }
 
 .header {
@@ -998,7 +1003,7 @@ p {
 .ebook-sub-header h1 {
     font-family: 'Fjalla One', sans-serif;
     font-weight: 700;
-    font-size: 3rem;
+    font-size: var(--h1size);
     text-align: center;
     color: var(--red);
 }
@@ -1034,7 +1039,7 @@ p {
 }
 
 .ebook-header-container p {
-    font-size: 1rem;
+    font-size: var(--psize);
     margin-top: 20px;
     margin-left: 20px;
     color: var(--black);
@@ -1130,42 +1135,6 @@ p {
         font-weight: 600;
     }
 
-    .little {
-        background-image: none;
-        margin-top: 2rem;
-        width: 80%;
-        margin-inline: auto;
-
-        justify-content: space-around;
-    }
-
-    .little h4 {
-        color: var(--red);
-        font-size: 2.4rem;
-        font-family: 'Fjalla One', sans-serif;
-        text-align: center;
-    }
-
-    .little .buttoncall {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 48%;
-
-        box-shadow: 0 0 10px var(--strong-shadow);
-        border-radius: 20px;
-        padding: 5px;
-    }
-
-    .little .ebook-cta-btn {
-        margin-top: 1rem;
-    }
-
-    .little img {
-        width: 100%;
-    }
-
     .ctaimage .bigImg {
         width: fit-content;
         height: 98%;
@@ -1237,14 +1206,14 @@ p {
     .audienceWhy h1 {
         font-family: 'Fjalla One', sans-serif;
         font-weight: 700;
-        font-size: 2.4rem;
+        font-size: var(--h1size);
         text-align: center;
         color: var(--red);
         text-transform: none;
     }
 
     .audienceWhy p {
-        font-size: 1rem;
+        font-size: var(--psize);
         margin-top: 20px;
         margin-left: 20px;
         color: var(--black);
@@ -1255,7 +1224,7 @@ p {
     .audienceWhy-col {
         flex-basis: 30%;
         border-radius: 10px;
-        margin-bottom: 5%;
+        /* margin-bottom: 5%; */
         text-align: left;
         /* padding: 5px; */
 
@@ -1332,7 +1301,7 @@ p {
     .beneficts h2 {
         position: relative;
         margin: 80px 30px 20px;
-        font-size: 2rem;
+        font-size: var(--h2size);
         color: var(--white);
         width: fit-content;
         max-width: 45vw;
@@ -1371,30 +1340,73 @@ p {
     .beneficts ul li {
         list-style-type: circle;
         margin-bottom: 10px;
-        font-size: 1.4rem;
+        font-size: var(--h3size);
     }
 
-    /*Demystification*/
+    /* CTA 2 (little) */
+
+    
+
+    .little {
+        background-image: none;
+        margin-top: 2rem;
+        width: 80%;
+        margin-inline: auto;
+
+        justify-content: space-around;
+    }
+
+    .little h4 {
+        color: var(--red);
+        font-size: var(--h2size);
+        font-family: 'Fjalla One', sans-serif;
+        text-align: center;
+    }
+
+    .little .buttoncall {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 48%;
+
+        box-shadow: 0 0 10px var(--strong-shadow);
+        border-radius: 20px;
+        padding: 5px;
+    }
+
+    .little .ebook-cta-btn {
+        margin-top: 1rem;
+    }
+
+    .little img {
+        width: 100%;
+    }
+
+    /* Demystification */
 
     .demystifications {
         margin-top: 60px;
-        width: 80%;
+        width: 100%;
         margin-inline: auto;
+
+        background-image: linear-gradient(to bottom, rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url('imgItens/whiteback.png');
+        background-size: 100%;
     }
 
     .demRow {
-        margin-bottom: 40px;
+        margin-bottom: 80px;
     }
 
     .demRow h2 {
         font-family: 'Fjalla One', sans-serif;
         text-align: center;
         color: var(--red);
-        font-size: 2rem;
+        font-size: var(--h2size);
     }
 
     .demRow p {
-        width: 40%;
+        width: 34%;
         margin-inline: auto;
         text-align: center;
         padding: 6px;
@@ -1402,6 +1414,7 @@ p {
         border-radius: 10px;
         margin-top: 10px;
         margin-bottom: 10px;
+        font-size: var(--psize);
     }
 
 .blog-content {
@@ -2189,6 +2202,10 @@ p {
         line-height: 30px;
     }
 
+    .audienceWhy-col img {
+        height: 34%;
+    }
+
     .beneficts {
         width: 100%;
         height: 100vh;
@@ -2210,7 +2227,7 @@ p {
     } */
 
     .beneficts ul {
-        width: 70%;
+        width: 84%;
         height: fit-content;
     }
 
@@ -2261,6 +2278,10 @@ p {
         position: absolute;
         top: 0;
         right: 5vw;
+    }
+
+    .demRow p {
+        width: 80%;
     }
 
     /*---- Contact Us ----*/

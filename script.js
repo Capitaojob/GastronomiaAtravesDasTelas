@@ -11,8 +11,8 @@ document.querySelector(".fa-bars").addEventListener("click", () => {
     navLinks.style.right = "0"
 })
 
-leFestin = document.getElementById("leFestin")
-    leFestin.play();
+// leFestin = document.getElementById("leFestin")
+//     leFestin.play();
 
 setInterval(changeImages, 3000);
 
